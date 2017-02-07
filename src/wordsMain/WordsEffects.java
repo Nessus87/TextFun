@@ -8,7 +8,6 @@ public class WordsEffects {
     public static void main (String[] args)
     {
         //>>WORD REVERSE<<
-
         Reverse word = new Reverse();
         System.out.print(word.reverser("Hi there everybody!") + ": this have been " + word.reverser("\"REVERSED\""));
 
