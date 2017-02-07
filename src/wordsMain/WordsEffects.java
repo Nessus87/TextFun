@@ -15,7 +15,7 @@ public class WordsEffects {
         String reversed = "\"REVERSED\"";
         System.out.print("\n" + new StringBuilder(hi).reverse().toString() + ": this have been " + new StringBuilder(reversed).reverse().toString() + " (StringBuilder.reverse() method)");
 
-        //VOWELS AND CONSONANTS COUNT
+        //>>VOWELS AND CONSONANTS COUNT<<
         CharsTypeCount countMe = new CharsTypeCount();
         countMe.charsCounter("HolAaAaA!");
         System.out.println("\n" + "Your word has: " + countMe.getVowelsNum() + " vowel(s) and: " + countMe.getConsNum() + " consonant(s), you typed also: " + countMe.getSymbNum() + " non-alphabetic symbol(s)");
