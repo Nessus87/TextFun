@@ -14,6 +14,14 @@ public class Reverse {
             last--;
             first++;
         }
-        return new String(drow);
+        String s = new String(drow);
+        if (s.toLowerCase().equals(word.toLowerCase()))
+        {
+            return s + " is a palindrome, and can't be reversed.\n";
+        }
+        else
+        {
+            return s + ": this have been \"DESREVER\"\n";
+        }
     }
 }
