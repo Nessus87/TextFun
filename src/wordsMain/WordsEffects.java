@@ -1,7 +1,6 @@
 package wordsMain;
 import reverse.*;
 import charsCount.CharsTypeCount;
-
 import java.lang.StringBuilder;
 
 public class WordsEffects {
