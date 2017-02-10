@@ -13,9 +13,18 @@ public class CharsTypeCount
 
             for (int i = 0; i < letters.length; i++) {
                 int index = i;
+
+                boolean isVowel;
+
                 if (letters[index] == 'a' || letters[index] == 'e' || letters[index] == 'i' || letters[index] == 'o' || letters[index] == 'u') {
+                    isVowel = true;
+                } else {
+                    isVowel = false;
+                }
+
+                if (isVowel) {
                     this.vowelsNum++;
-                } else if (letters[index] == 'b' || letters[index] == 'c' || letters[index] == 'd' || letters[index] == 'f' || letters[index] == 'g' || letters[index] == 'h' || letters[index] == 'j' || letters[index] == 'k' || letters[index] == 'l' || letters[index] == 'm' || letters[index] == 'n' || letters[index] == 'p' || letters[index] == 'q' || letters[index] == 'r' || letters[index] == 's' || letters[index] == 't' || letters[index] == 'v' || letters[index] == 'w' || letters[index] == 'x' || letters[index] == 'y' || letters[index] == 'z')
+                } else if (Character.isLetter(letters[index]) && !isVowel)
                 {
                     this.consNum++;
                 }
